@@ -124,12 +124,12 @@ TextureImporter:
       name: mc-walking-part1_0
       rect:
         serializedVersion: 2
-        x: 588
+        x: 621
         y: 89
-        width: 594
-        height: 1431
+        width: 523
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,12 +145,12 @@ TextureImporter:
       name: mc-walking-part1_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 19
         y: 89
-        width: 594
-        height: 1431
+        width: 497
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,12 +166,12 @@ TextureImporter:
       name: mc-walking-part1_2
       rect:
         serializedVersion: 2
-        x: 1185
+        x: 1233
         y: 89
-        width: 594
-        height: 1431
+        width: 490
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: mc-walking-part1_3
       rect:
         serializedVersion: 2
-        x: 1834
+        x: 1847
         y: 89
-        width: 594
-        height: 1431
+        width: 574
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,9 +211,9 @@ TextureImporter:
         x: 2457
         y: 89
         width: 710
-        height: 1431
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +229,12 @@ TextureImporter:
       name: mc-walking-part1_5
       rect:
         serializedVersion: 2
-        x: 3234
+        x: 3303
         y: 89
-        width: 710
-        height: 1431
+        width: 624
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

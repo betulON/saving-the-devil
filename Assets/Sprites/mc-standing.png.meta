@@ -115,12 +115,12 @@ TextureImporter:
       name: mc-standing_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 155
         y: 89
-        width: 921
-        height: 1431
+        width: 485
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,12 +136,12 @@ TextureImporter:
       name: mc-standing_1
       rect:
         serializedVersion: 2
-        x: 1456
+        x: 1618
         y: 89
-        width: 921
-        height: 1431
+        width: 542
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,12 +157,12 @@ TextureImporter:
       name: mc-standing_2
       rect:
         serializedVersion: 2
-        x: 2955
+        x: 3081
         y: 89
-        width: 921
-        height: 1431
+        width: 616
+        height: 1299
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
