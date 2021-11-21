@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3322620284144543484, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}
       propertyPath: m_Name
-      value: Button (2)
+      value: MenuButton (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 1491500044}
   - component: {fileID: 1491500045}
   m_Layer: 5
-  m_Name: Button Layout Group
+  m_Name: MenuButtonLayoutGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -932,7 +932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3322620284144543484, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}
       propertyPath: m_Name
-      value: Button (1)
+      value: MenuButton (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}
@@ -1034,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3322620284144543484, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}
       propertyPath: m_Name
-      value: Button
+      value: MenuButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}
