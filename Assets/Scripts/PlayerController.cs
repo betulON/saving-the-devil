@@ -16,14 +16,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb2d.AddTorque(torqueAmount);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb2d.AddTorque(-torqueAmount);
-        }
+        
         
     }
 }
