@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05676e3310a3f064b9da8a7e34bbda08, type: 3}
+  m_Name: A4_TheLocket
+  m_EditorClassIdentifier: 
+  storyText: "\"How am I still alive?\"\r\n\r\nYou get your hand around your neck.
+    You can still feel the rope. Suddenly you feel a cold metal chain and take it
+    off. \r\n\r\nIt is a silver locket with a weird image of it.\r\n\r\nYou try to
+    open it but you can't. It is locked.\r\n\r\nYou remember you have a knife in
+    your drawer that you can use."
+  choices:
+  - '1 - Open the locket with your knife '
+  - 2 - Examine the image
