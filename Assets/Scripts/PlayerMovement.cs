@@ -10,10 +10,10 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myCapsuleCollider;
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 30f;
-
+    [SerializeField] float flyingSpeed = 5f;
     Animator myAnimator;
+    bool isAlive = true;
     
-    // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -24,16 +24,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isAlive) { return; }
         Walk();
         FlipSprite();
+        Die();
     }
 
     void OnMove(InputValue value)
     { 
+        if (!isAlive) { return; }
         moveInput = value.Get<Vector2>();
     }
     void OnJump(InputValue value)
     {
+        if (!isAlive) { return; }
         bool isTouchingGround = myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
         if (value.isPressed && isTouchingGround)
         {
@@ -57,7 +61,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (playerHasHorizontalSpeed)
         {
-            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1);
+            transform.localScale = new Vector2(Mathf.Sign(myRigidbody.velocity.x), 1f);
+        }
+    }
+    void Die()
+    {
+        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Dying");
         }
     }
 }
