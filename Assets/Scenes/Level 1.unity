@@ -1833,6 +1833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   jumpSpeed: 30
+  flyingSpeed: 20
 --- !u!1 &2107009035
 GameObject:
   m_ObjectHideFlags: 0
