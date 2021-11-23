@@ -687,9 +687,9 @@ GameObject:
   - component: {fileID: 867697335}
   - component: {fileID: 867697338}
   - component: {fileID: 867697339}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FemaleFae (Enemy)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1641,9 +1641,9 @@ GameObject:
   - component: {fileID: 2078129628}
   - component: {fileID: 2078129631}
   - component: {fileID: 2078129632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ira (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
