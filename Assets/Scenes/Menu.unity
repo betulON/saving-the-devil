@@ -1036,5 +1036,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3322620284144543484, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}
+      propertyPath: m_TagString
+      value: Exit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3755054d0fff1433bb164142ad31c9ed, type: 3}

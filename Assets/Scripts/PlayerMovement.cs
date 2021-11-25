@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 30f;
     [SerializeField] float flyingSpeed = 5f;
+
+    [SerializeField] GameObject arrow;
+    [SerializeField] Transform bow;
+
     Animator myAnimator;
     bool isAlive = true;
     
@@ -19,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+
+    //    bowPlace = GetComponentInChildren<Transform>();
     }
 
     // Update is called once per frame
@@ -42,6 +50,16 @@ public class PlayerMovement : MonoBehaviour
         if (value.isPressed && isTouchingGround)
         {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
+        }
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (!isAlive) { return; }
+        if (value.isPressed)
+        {
+            myAnimator.SetTrigger("Shooting");
+            Instantiate(arrow, bow.position, transform.rotation);
         }
     }
 
@@ -70,6 +88,28 @@ public class PlayerMovement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, flyingSpeed);
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Exit")
+        {
+            StartCoroutine(LoadNextLevel());
+        }
+    }
+
+    IEnumerator LoadNextLevel()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+
+        int nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextLevelIndex == SceneManager.GetAllScenes().Length)
+        {
+            SceneManager.LoadScene(0);
+        }
+        SceneManager.LoadScene(nextLevelIndex);
     }
 }
