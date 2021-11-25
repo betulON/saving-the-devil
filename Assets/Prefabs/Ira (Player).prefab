@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 7465652114013740559}
   m_Layer: 0
   m_Name: Ira (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +218,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   jumpSpeed: 30
-  flyingSpeed: 20
+  flyingSpeed: 3
   arrow: {fileID: 5617195978798007957, guid: d6b575293f08e7648a0be08c959796bc, type: 3}
   bow: {fileID: 3691083079336874183}

@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isAlive) { return; }
         bool isTouchingGround = myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        if (value.isPressed && isTouchingGround)
+        if (value.isPressed)
         {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }
@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnFire(InputValue value)
     {
-        if (!isAlive) { return; }
+        if (!isAlive || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("PShooting") ) { return; }
         if (value.isPressed)
         {
             myAnimator.SetTrigger("Shooting");
@@ -88,8 +88,9 @@ public class PlayerMovement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
-           // myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, flyingSpeed);
-            //FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            myRigidbody.gravityScale = 0;
+            myRigidbody.velocity = new Vector2(0f, 0f);
+      //      FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 
@@ -103,13 +104,18 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator LoadNextLevel()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(5f);
 
         int nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (nextLevelIndex == SceneManager.GetAllScenes().Length)
+        Debug.Log(SceneManager.sceneCountInBuildSettings);
+        Debug.Log(nextLevelIndex);
+        if (nextLevelIndex == SceneManager.sceneCountInBuildSettings)
         {
             SceneManager.LoadScene(0);
+        }else
+        {
+            SceneManager.LoadScene(nextLevelIndex);
         }
-        SceneManager.LoadScene(nextLevelIndex);
+        
     }
 }
