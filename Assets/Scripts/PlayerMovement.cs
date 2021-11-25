@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
             myAnimator.SetTrigger("Dying");
             myRigidbody.gravityScale = 0;
             myRigidbody.velocity = new Vector2(0f, 0f);
-      //      FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 

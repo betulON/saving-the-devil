@@ -15,22 +15,26 @@ public class EnemyMovement : MonoBehaviour
         player = FindObjectOfType<PlayerMovement>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Walk();
-        FlipSprite();
     }
 
     void Walk()
     {
-        float distance = PlayerDistance();
-        if (distance < 10f)
+        float horizontalDistance = PlayerHorizontalDistance();
+        if (horizontalDistance < 2f)
+        {
+            myRigidbody.velocity = new Vector2(0f, 0f);
+            return;
+        }
+        if (horizontalDistance < 10f)
         {
             moveSpeed = moveSpeed * Mathf.Sign(player.transform.position.x - transform.position.x) * Mathf.Sign(moveSpeed);
         }
         
         myRigidbody.velocity = new Vector2(moveSpeed, 0f);
+        FlipSprite();
     }
 
     void FlipSprite()
@@ -38,8 +42,8 @@ public class EnemyMovement : MonoBehaviour
         transform.localScale = new Vector2((-1) * Mathf.Sign(myRigidbody.velocity.x), 1f);
     }
 
-    float PlayerDistance()
+    float PlayerHorizontalDistance()
     {
-        return Vector2.Distance(player.transform.position, transform.position);
+        return Mathf.Abs(player.transform.position.x - transform.position.x);
     }
 }
