@@ -88,8 +88,8 @@ public class PlayerMovement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
-            myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, flyingSpeed);
-            FindObjectOfType<GameSession>().ProcessPlayerDeath();
+           // myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, flyingSpeed);
+            //FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 
