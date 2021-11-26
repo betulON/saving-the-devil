@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
+    [SerializeField] float loadSceneDelay = 3f;
 
     void Awake()
     {
@@ -34,11 +35,15 @@ public class GameSession : MonoBehaviour
         }
     }
 
+    public void ProcessExit()
+    {
+        StartCoroutine(LoadNextLevel());
+    }
+
     void TakeLife()
     {
         playerLives--;
         StartCoroutine(LoadCurrentLevel());
-      //  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void ResetGameSession()
@@ -50,8 +55,25 @@ public class GameSession : MonoBehaviour
 
     IEnumerator LoadCurrentLevel()
     {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(loadSceneDelay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
+
+    IEnumerator LoadNextLevel()
+    {
+        yield return new WaitForSecondsRealtime(loadSceneDelay);
+        int nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextLevelIndex == SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            SceneManager.LoadScene(nextLevelIndex);
+        }
+
+    }
+
+
 }

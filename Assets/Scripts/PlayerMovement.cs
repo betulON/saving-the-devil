@@ -98,24 +98,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.tag == "Exit")
         {
-            StartCoroutine(LoadNextLevel());
+            FindObjectOfType<GameSession>().ProcessExit();
         }
     }
 
-    IEnumerator LoadNextLevel()
-    {
-        yield return new WaitForSecondsRealtime(5f);
-
-        int nextLevelIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        Debug.Log(SceneManager.sceneCountInBuildSettings);
-        Debug.Log(nextLevelIndex);
-        if (nextLevelIndex == SceneManager.sceneCountInBuildSettings)
-        {
-            SceneManager.LoadScene(0);
-        }else
-        {
-            SceneManager.LoadScene(nextLevelIndex);
-        }
-        
-    }
 }

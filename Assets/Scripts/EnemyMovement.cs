@@ -22,13 +22,13 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        float horizontalDistance = PlayerHorizontalDistance();
         Walk();
     }
 
     void Walk()
     {
         float horizontalDistance = PlayerHorizontalDistance();
+        float distanceFactor = 3f / horizontalDistance;
         if (horizontalDistance < minDistanceToFollow)
         {
             myRigidbody.velocity = new Vector2(0f, 0f);
@@ -38,8 +38,8 @@ public class EnemyMovement : MonoBehaviour
         {
             moveSpeed = moveSpeed * Mathf.Sign(player.transform.position.x - transform.position.x) * Mathf.Sign(moveSpeed);
         }
-        
-        myRigidbody.velocity = new Vector2(moveSpeed, 0f);
+        distanceFactor = Mathf.Sign(moveSpeed) * distanceFactor;
+        myRigidbody.velocity = new Vector2(moveSpeed + distanceFactor, 0f);
         FlipSprite();
     }
 
