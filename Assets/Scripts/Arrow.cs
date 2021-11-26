@@ -5,9 +5,15 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     Rigidbody2D myRigidbody;
-    [SerializeField] float arrowSpeed = 5f;
+    [SerializeField] float arrowSpeed = 10f;
+    [SerializeField] float arrowLifeTime = 2.5f;
     PlayerMovement player;
     float xSpeed;
+
+    void Awake()
+    {
+        Destroy(gameObject, arrowLifeTime);
+    }
 
     void Start()
     {
@@ -29,6 +35,7 @@ public class Arrow : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
