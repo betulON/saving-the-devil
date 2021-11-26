@@ -37,12 +37,21 @@ public class GameSession : MonoBehaviour
     void TakeLife()
     {
         playerLives--;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        StartCoroutine(LoadCurrentLevel());
+      //  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void ResetGameSession()
     {
         SceneManager.LoadScene(0);
         Destroy(gameObject);
+    }
+
+
+    IEnumerator LoadCurrentLevel()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
 }
