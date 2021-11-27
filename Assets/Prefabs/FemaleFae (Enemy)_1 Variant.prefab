@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7367921046283771713, guid: ad0882df1ffc2a348ac987acd5ea7d83, type: 3}
       propertyPath: m_Name
-      value: FemaleFae (Enemy)_1
+      value: FemaleFae (Enemy)_1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7367921046283771714, guid: ad0882df1ffc2a348ac987acd5ea7d83, type: 3}
       propertyPath: m_RootOrder
@@ -62,20 +62,3 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7367921046283771726, guid: ad0882df1ffc2a348ac987acd5ea7d83, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad0882df1ffc2a348ac987acd5ea7d83, type: 3}
---- !u!1 &5284957923222298873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7367921046283771713, guid: ad0882df1ffc2a348ac987acd5ea7d83, type: 3}
-  m_PrefabInstance: {fileID: 3393440455329021880}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &561011588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5284957923222298873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e307a05608b324f8101b5eafabec45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

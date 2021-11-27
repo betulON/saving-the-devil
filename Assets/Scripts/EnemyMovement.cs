@@ -6,7 +6,8 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
-    [SerializeField] float damage = 10f;
+    [SerializeField] float damage = 1f;
+    [SerializeField] float damageDistance = 10f;
     [SerializeField] float minDistanceToFollow = 0.2f;
     [SerializeField] float maxDistanceToFollow = 15f;
 
@@ -29,6 +30,41 @@ public class EnemyMovement : MonoBehaviour
 
     void Walk()
     {
+        float distance = PlayerDistance();
+        if (distance < maxDistanceToFollow)
+        {
+            MoveForwardToPlayer();
+        }
+        else
+        {
+            MoveBetweenWaypoints();
+        }
+    }
+
+    void FlipSprite()
+    {
+        transform.localScale = new Vector2((-1) * Mathf.Sign(myRigidbody.velocity.x), 1f);
+    }
+
+    float PlayerHorizontalDistance()
+    {
+        return Mathf.Abs(player.transform.position.x - transform.position.x);
+    }
+    float PlayerDistance()
+    {
+        return Vector3.Distance(player.transform.position, transform.position);
+    }
+
+    void MakeDamage()
+    {
+        if (PlayerDistance() <= damageDistance)
+        {
+            player.ReducePlayerHealth(damage / PlayerHorizontalDistance());
+        }
+    }
+
+    void MoveForwardToPlayer()
+    {
         float horizontalDistance = PlayerHorizontalDistance();
         float distanceFactor = 3f / horizontalDistance;
         if (horizontalDistance < minDistanceToFollow)
@@ -45,22 +81,9 @@ public class EnemyMovement : MonoBehaviour
         FlipSprite();
     }
 
-    void FlipSprite()
+    void MoveBetweenWaypoints()
     {
-        transform.localScale = new Vector2((-1) * Mathf.Sign(myRigidbody.velocity.x), 1f);
-    }
-
-    float PlayerHorizontalDistance()
-    {
-        return Mathf.Abs(player.transform.position.x - transform.position.x);
-    }
-
-    void MakeDamage()
-    {
-        PlayerMovement player = FindObjectOfType<PlayerMovement>();
-        if (player != null)
-        {            
-            player.GetComponent<Health>().ReduceHealth(damage / PlayerHorizontalDistance());
-        }      
+        Pathfinding pathfinder = GetComponent<Pathfinding>();
+        pathfinder.FollowPath();
     }
 }

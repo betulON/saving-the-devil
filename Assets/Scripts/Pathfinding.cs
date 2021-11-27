@@ -25,10 +25,10 @@ public class Pathfinding : MonoBehaviour
 
     void Update()
     {
-        FollowPath();
+        //FollowPath();
     }
 
-    void FollowPath()
+    public void FollowPath()
     {
         if (reverse)
         {

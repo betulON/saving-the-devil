@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myCapsuleCollider;
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 30f;
+    [SerializeField] float health = 100f;
 
     [SerializeField] GameObject arrow;
     [SerializeField] Transform bow;
@@ -83,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Die()
     {
-        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")) || health <= 0f)
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
@@ -99,6 +100,11 @@ public class PlayerMovement : MonoBehaviour
         {
             FindObjectOfType<GameSession>().ProcessExit();
         }
+    }
+
+    public void ReducePlayerHealth(float damage)
+    {
+        health -= damage;
     }
 
 }

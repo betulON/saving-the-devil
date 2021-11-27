@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7367921046283771726}
   - component: {fileID: 7367921046283771727}
   - component: {fileID: 565086903305423603}
+  - component: {fileID: 4649430910410151024}
   m_Layer: 9
   m_Name: FemaleFae (Enemy)
   m_TagString: Enemy
@@ -135,8 +136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  damage: 0.01
+  damageDistance: 10
   minDistanceToFollow: 0.2
-  maxDistanceToFollow: 15
+  maxDistanceToFollow: 20
 --- !u!50 &7367921046283771727
 Rigidbody2D:
   serializedVersion: 4
@@ -171,3 +174,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+--- !u!114 &4649430910410151024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367921046283771713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e307a05608b324f8101b5eafabec45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
