@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        SpawnEnemies();
+        StartCourutine(SpawnEnemies());
     }
 
     public MoveConfigSO GetMoveConfig()
@@ -16,12 +16,17 @@ public class EnemySpawner : MonoBehaviour
         return moveConfig;
     }
 
-    void SpawnEnemies()
+    IEnumerator SpawnEnemies()
     {
-        Instantiate(moveConfig.GetEnemyPrefab(0),
+        for (int i = 0; i < moveConfig.GetEnemyCount(); i++)
+        {
+            Instantiate(moveConfig.GetEnemyPrefab(i),
                     moveConfig.GetStartingWaypoint().position,
                     Quaternion.identity,
                     transform);
+
+            yield return new WaitForSeconds(moveConfig.GetRandomSpwanTime());
+        } 
     }
 
 }
