@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myCapsuleCollider;
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 30f;
-    [SerializeField] float flyingSpeed = 5f;
 
     [SerializeField] GameObject arrow;
     [SerializeField] Transform bow;
