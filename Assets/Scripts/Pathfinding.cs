@@ -51,6 +51,10 @@ public class Pathfinding : MonoBehaviour
         }
         else
         {
+            //if (waypoints == null)
+            //{
+            //    Debug.Log("nullll");
+            //}
             if (waypointIndex < waypoints.Count)
             {
                 Vector3 targetPosition = waypoints[waypointIndex].position;

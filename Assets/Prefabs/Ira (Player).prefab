@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 3002423506750902317}
   - component: {fileID: 5578002099451128589}
   - component: {fileID: 7024956146118223519}
+  - component: {fileID: 7465652116081828849}
   m_Layer: 5
   m_Name: Healthbar Canvas
   m_TagString: Untagged
@@ -189,6 +190,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7465652116081828849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029135435986943145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b5f613c1baf426cbbf7c87ab3ca10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 8934666005535932544}
+  offset: {x: 0, y: 1.2, z: 0}
 --- !u!1 &5507894295274832355
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,9 +534,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   jumpSpeed: 30
-  health: 100
+  maxHealth: 100
   arrow: {fileID: 5617195978798007957, guid: d6b575293f08e7648a0be08c959796bc, type: 3}
   bow: {fileID: 3691083079336874183}
+  healthbar: {fileID: 7465652116081828849}
 --- !u!1 &7757085622338597345
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
