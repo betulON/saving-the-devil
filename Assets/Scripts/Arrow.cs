@@ -6,6 +6,7 @@ public class Arrow : MonoBehaviour
 {
     Rigidbody2D myRigidbody;
     [SerializeField] float arrowSpeed = 15f;
+    [SerializeField] float arrowDamage = 15f;
     [SerializeField] float arrowLifeTime = 2.5f;
     PlayerMovement player;
     float xSpeed;
@@ -31,7 +32,8 @@ public class Arrow : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            collision.GetComponent<Health>().ReduceHealth(arrowDamage);
+           // Destroy(collision.gameObject);
         }
         Destroy(gameObject);
     }

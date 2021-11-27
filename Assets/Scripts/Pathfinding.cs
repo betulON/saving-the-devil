@@ -6,7 +6,7 @@ using UnityEngine;
 public class Pathfinding : MonoBehaviour
 {
     EnemySpawner enemySpawner;
-    MoveConfigSO moveConfig;
+    WaveConfigSO waveConfig;
     List<Transform> waypoints;
     int waypointIndex = 0;
     bool reverse = false;
@@ -18,8 +18,8 @@ public class Pathfinding : MonoBehaviour
 
     void Start()
     {
-        moveConfig = enemySpawner.GetMoveConfig();
-        waypoints = moveConfig.GetWaypoints();
+        waveConfig = enemySpawner.GetMoveConfig();
+        waypoints = waveConfig.GetWaypoints();
         transform.position = waypoints[waypointIndex].position;
     }
 
@@ -35,7 +35,7 @@ public class Pathfinding : MonoBehaviour
             if (waypointIndex >= 0)
             {
                 Vector3 targetPosition = waypoints[waypointIndex].position;
-                float delta = moveConfig.GetMovementSpeed() * Time.deltaTime;
+                float delta = waveConfig.GetMovementSpeed() * Time.deltaTime;
                 transform.position = Vector2.MoveTowards(transform.position, targetPosition, delta);
                 FlipSprite(targetPosition);
                 if (transform.position == targetPosition)
@@ -54,7 +54,7 @@ public class Pathfinding : MonoBehaviour
             if (waypointIndex < waypoints.Count)
             {
                 Vector3 targetPosition = waypoints[waypointIndex].position;
-                float delta = moveConfig.GetMovementSpeed() * Time.deltaTime;
+                float delta = waveConfig.GetMovementSpeed() * Time.deltaTime;
                 transform.position = Vector2.MoveTowards(transform.position, targetPosition, delta);
                 FlipSprite(targetPosition);
                 if (transform.position == targetPosition)

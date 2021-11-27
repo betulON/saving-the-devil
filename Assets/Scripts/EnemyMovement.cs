@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
+    [SerializeField] float damage = 10f;
     [SerializeField] float minDistanceToFollow = 0.2f;
     [SerializeField] float maxDistanceToFollow = 15f;
 
@@ -23,6 +24,7 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         Walk();
+        MakeDamage();
     }
 
     void Walk()
@@ -51,5 +53,14 @@ public class EnemyMovement : MonoBehaviour
     float PlayerHorizontalDistance()
     {
         return Mathf.Abs(player.transform.position.x - transform.position.x);
+    }
+
+    void MakeDamage()
+    {
+        PlayerMovement player = FindObjectOfType<PlayerMovement>();
+        if (player != null)
+        {            
+            player.GetComponent<Health>().ReduceHealth(damage / PlayerHorizontalDistance());
+        }      
     }
 }

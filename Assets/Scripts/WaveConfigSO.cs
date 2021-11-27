@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Move Config", fileName = "New Move Config")]
-public class MoveConfigSO : ScriptableObject
+public class WaveConfigSO : ScriptableObject
 {
     [SerializeField] List<GameObject> enemyPrefabs;
     [SerializeField] Transform pathPrefab;
