@@ -12,19 +12,24 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myCapsuleCollider;
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 30f;
-    [SerializeField] float health = 100f;
+    [SerializeField] float maxHealth = 100f;
 
     [SerializeField] GameObject arrow;
     [SerializeField] Transform bow;
+    [SerializeField] HealthbarBehavior healthbar;
 
     Animator myAnimator;
     bool isAlive = true;
+    float health;
     
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        health = maxHealth;
+        healthbar.SetHealth(health, maxHealth);
+        
 
     //    bowPlace = GetComponentInChildren<Transform>();
     }
@@ -36,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         Walk();
         FlipSprite();
         Die();
+        UpdateHealth();
     }
 
     void OnMove(InputValue value)
@@ -105,6 +111,11 @@ public class PlayerMovement : MonoBehaviour
     public void ReducePlayerHealth(float damage)
     {
         health -= damage;
+    }
+
+    void UpdateHealth()
+    {
+        healthbar.SetHealth(health, maxHealth);
     }
 
 }
