@@ -6911,6 +6911,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
   m_PrefabInstance: {fileID: 1346397713}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1623454499 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8934666005535932544, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+  m_PrefabInstance: {fileID: 7465652116081828847}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1629405384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
@@ -9470,3 +9481,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b5f613c1baf426cbbf7c87ab3ca10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 1623454499}
+  offset: {x: 0, y: 0, z: 0}
