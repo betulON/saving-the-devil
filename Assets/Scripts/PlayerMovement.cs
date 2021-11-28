@@ -12,14 +12,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float jumpSpeed = 30f;
     [SerializeField] float maxHealth = 100f;
+    [SerializeField] float maxMana = 50f;
 
     [SerializeField] GameObject arrow;
     [SerializeField] Transform bow;
     [SerializeField] HealthbarBehavior healthbar;
+    [SerializeField] HealthbarBehavior manaBar;
 
     Animator myAnimator;
     bool isAlive = true;
     float health;
+
+    bool isGhost = false;
+    float currentMana;
     
     void Start()
     {
@@ -73,6 +78,14 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(targetDirection.x), 1f);
             myAnimator.SetTrigger("Shooting");
             Instantiate(arrow, bow.position, rotationArrow);
+        }
+    }
+
+    void OnGhost(InputValue value)
+    {
+        if (true)
+        {
+
         }
     }
 
