@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4189499, g: 0.9716981, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -316,7 +316,6 @@ GameObject:
   - component: {fileID: 7367921046283771726}
   - component: {fileID: 7367921046283771727}
   - component: {fileID: 565086903305423603}
-  - component: {fileID: 4649430910410151024}
   m_Layer: 9
   m_Name: FemaleFae (Enemy)
   m_TagString: Enemy
@@ -477,18 +476,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   healthbar: {fileID: 1524039254296657727}
---- !u!114 &4649430910410151024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7367921046283771713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e307a05608b324f8101b5eafabec45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9065169563164058601
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +512,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 20}
+  m_SizeDelta: {x: 100, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6207220459760293848
 MonoBehaviour:

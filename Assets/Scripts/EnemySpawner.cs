@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(CreateWaves());
     }
 
-    public WaveConfigSO GetMoveConfig()
+    public WaveConfigSO GetWaveConfig()
     {
         return currentWave;
     }

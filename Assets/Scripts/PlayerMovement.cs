@@ -93,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
         if (myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")) || health <= 0f)
         {
             isAlive = false;
+            healthbar.SetHealth(0f, maxHealth);
             myAnimator.SetTrigger("Dying");
             myRigidbody.gravityScale = 0;
             myRigidbody.velocity = new Vector2(0f, 0f);
