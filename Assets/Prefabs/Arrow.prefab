@@ -93,7 +93,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5617195978798007957}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -145,4 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowSpeed: 15
-  arrowLifeTime: 2.5
+  arrowDamage: 15
+  arrowLifeTime: 1

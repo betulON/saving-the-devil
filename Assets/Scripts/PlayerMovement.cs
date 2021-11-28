@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
     //    bowPlace = GetComponentInChildren<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isAlive) { return; }
@@ -64,7 +63,15 @@ public class PlayerMovement : MonoBehaviour
         if (value.isPressed)
         {
             myAnimator.SetTrigger("Shooting");
-            Instantiate(arrow, bow.position, transform.rotation);
+            
+            //Mouse rotation
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()); 
+            Vector3 targetDirection = mousePos - transform.position;
+            targetDirection.Normalize();
+            float rotation_z = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+            Quaternion rotationArrow = Quaternion.Euler(0f, 0f, rotation_z);
+            //Instantiate(arrow, bow.position, transform.rotation);
+            Instantiate(arrow, bow.position, rotationArrow);
         }
     }
 
