@@ -62,8 +62,6 @@ public class PlayerMovement : MonoBehaviour
         if (!isAlive || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("PShooting") ) { return; }
         if (value.isPressed)
         {
-            myAnimator.SetTrigger("Shooting");
-            
             //Mouse rotation
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()); 
             Vector3 targetDirection = mousePos - transform.position;
@@ -71,6 +69,9 @@ public class PlayerMovement : MonoBehaviour
             float rotation_z = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
             Quaternion rotationArrow = Quaternion.Euler(0f, 0f, rotation_z);
             //Instantiate(arrow, bow.position, transform.rotation);
+
+            transform.localScale = new Vector2(Mathf.Sign(targetDirection.x), 1f);
+            myAnimator.SetTrigger("Shooting");
             Instantiate(arrow, bow.position, rotationArrow);
         }
     }
