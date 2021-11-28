@@ -77,7 +77,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (PlayerDistance() <= damageDistance)
         {
-            player.ReducePlayerHealth(damage / PlayerHorizontalDistance());
+            player.ReducePlayerHealth(damage / PlayerDistance());
         }
     }
 

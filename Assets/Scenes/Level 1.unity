@@ -1534,7 +1534,7 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: 01d2c68a710b87047a1195bb940a9bb6, type: 2}
   - {fileID: 11400000, guid: 74f91b77269045445a9083bced89c567, type: 2}
-  timeBetweenWaves: 0
+  timeBetweenWaves: 5
 --- !u!4 &307609598
 Transform:
   m_ObjectHideFlags: 0
@@ -4885,8 +4885,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207418261}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.609365, y: -13.080005, z: 147.06895}
-  m_LocalScale: {x: 25.424929, y: 1.8768749, z: 1}
+  m_LocalPosition: {x: 21.604, y: -14.4, z: 147.06895}
+  m_LocalScale: {x: 42.554974, y: 3.2106287, z: 1}
   m_Children: []
   m_Father: {fileID: 64152165}
   m_RootOrder: 4
@@ -8258,7 +8258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028164234}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.609365, y: -1.7200046, z: 147.06895}
+  m_LocalPosition: {x: 21.609365, y: 0.9, z: 147.06895}
   m_LocalScale: {x: 130, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 64152165}
@@ -8877,17 +8877,33 @@ PrefabInstance:
       propertyPath: m_AnimatedTarget
       value: 
       objectReference: {fileID: 2078129630}
+    - target: {fileID: 2049586710873196135, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_ChildCameras.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2049586711006097324, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 2078129626}
+    - target: {fileID: 2049586711006097324, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2049586711006097325, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.390186
+      value: 16.412409
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049586711006097325, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 108.371994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049586711421395600, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_ScreenX
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2049586711553572641, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.6577773
+      value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 2049586711553572641, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8895,15 +8911,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2049586711553572830, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2049586711898514090, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 2078129626}
+    - target: {fileID: 2049586711898514090, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2049586711898514093, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.390186
+      value: 16.412409
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049586711898514093, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.756437
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049586711898514093, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 108.371994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049586711917832553, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_ScreenX
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2049586711956766040, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_RootOrder
