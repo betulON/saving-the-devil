@@ -13,29 +13,35 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed = 30f;
     [SerializeField] float maxHealth = 100f;
     [SerializeField] float maxMana = 50f;
+    [SerializeField] float ghostMana = 2f;
 
     [SerializeField] GameObject arrow;
     [SerializeField] Transform bow;
     [SerializeField] HealthbarBehavior healthbar;
-    [SerializeField] HealthbarBehavior manaBar;
+
 
     Animator myAnimator;
     bool isAlive = true;
     float health;
 
-    bool isGhost = false;
+    bool isGhost;
+    float ghostInput;
     float currentMana;
-    
+
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        isGhost = false;
         health = maxHealth;
+        currentMana = maxMana;
         healthbar.SetHealth(health, maxHealth);
-        
+        healthbar.SetMana(currentMana, maxMana);
 
-    //    bowPlace = GetComponentInChildren<Transform>();
+
+        //    bowPlace = GetComponentInChildren<Transform>();
     }
 
     void Update()
@@ -45,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
         FlipSprite();
         Die();
         UpdateHealth();
+        Ghost();
+        UpdateMana();
     }
 
     void OnMove(InputValue value)
@@ -64,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnFire(InputValue value)
     {
+        if (isGhost) { return; }
         if (!isAlive || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("PShooting") ) { return; }
         if (value.isPressed)
         {
@@ -83,9 +92,26 @@ public class PlayerMovement : MonoBehaviour
 
     void OnGhost(InputValue value)
     {
-        if (true)
-        {
+        isGhost = Mathf.Abs(value.Get<float>()) > Mathf.Epsilon;
+        //if (context.performed)
+        //{
+        //    isGhost = true;
+        //}
+        //if (context.canceled)
+        //{
+        //    isGhost = false;
+        //}
+    }
 
+    void Ghost()
+    {
+        if (isGhost)
+        {
+            Debug.Log("isGhost");
+            Debug.Log(isGhost);
+
+            //myRigidbody.mass = 0.1f;
+            ReducePlayerMana(ghostMana);
         }
     }
 
@@ -132,12 +158,23 @@ public class PlayerMovement : MonoBehaviour
 
     public void ReducePlayerHealth(float damage)
     {
+        if (isGhost) { return; }
         health -= damage;
     }
 
     void UpdateHealth()
     {
         healthbar.SetHealth(health, maxHealth);
+    }
+
+    void ReducePlayerMana(float value)
+    {
+        currentMana -= value;
+    }
+
+    void UpdateMana()
+    {
+        healthbar.SetMana(currentMana, maxMana);
     }
 
 }

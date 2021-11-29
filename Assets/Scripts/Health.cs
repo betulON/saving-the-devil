@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     {
         health = maxHealth;
         healthbar.SetHealth(health, maxHealth);
+        healthbar.SetMana(0f, 0f);
     }
 
     public void ReduceHealth(float damage)

@@ -9369,20 +9369,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 481682529259358782, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
-      propertyPath: m_Maskable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 481682529259358782, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4097536803507133421, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+    - target: {fileID: 3532151620989068038, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4097536803507133421, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
-      propertyPath: m_SizeDelta.x
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465652114013740597, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}

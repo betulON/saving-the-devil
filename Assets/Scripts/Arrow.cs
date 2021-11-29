@@ -13,6 +13,7 @@ public class Arrow : MonoBehaviour
     float xSpeed;
 
     Vector3 mousePos;
+    Vector3 direction;
 
     void Awake()
     {
@@ -26,16 +27,15 @@ public class Arrow : MonoBehaviour
         xSpeed = player.transform.localScale.x * arrowSpeed;
 
         mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        direction = mousePos - transform.position;
+        direction.z = 0;
+        direction.Normalize();
     }
 
     void Update()
     {
         //myRigidbody.velocity = new Vector2(xSpeed, 0f);
-        
-        Debug.Log("mousePos");
-        Debug.Log(mousePos);
-        float delta = 15f * Time.deltaTime;
-        transform.position = Vector2.MoveTowards(transform.position, mousePos, delta);
+        transform.position += direction * arrowSpeed * Time.deltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
