@@ -157,6 +157,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGhost) { return; }
         health -= damage;
+
+        audioPlayer.PlayHurtingClip();
     }
 
     void UpdateHealth()
