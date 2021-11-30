@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform bow;
     [SerializeField] HealthbarBehavior healthbar;
 
+    AudioPlayer audioPlayer;
 
     Animator myAnimator;
     bool isAlive = true;
@@ -27,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
     bool isGhost;
     float ghostInput;
     float currentMana;
+
+    void Awake()
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
+    }
 
 
     void Start()
@@ -87,29 +93,20 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(targetDirection.x), 1f);
             myAnimator.SetTrigger("Shooting");
             Instantiate(arrow, bow.position, rotationArrow);
+
+            audioPlayer.PlayShootingClip();
         }
     }
 
     void OnGhost(InputValue value)
     {
-        isGhost = Mathf.Abs(value.Get<float>()) > Mathf.Epsilon;
-        //if (context.performed)
-        //{
-        //    isGhost = true;
-        //}
-        //if (context.canceled)
-        //{
-        //    isGhost = false;
-        //}
+        isGhost = Mathf.Abs(value.Get<float>()) > Mathf.Epsilon && currentMana >= ghostMana;
     }
 
     void Ghost()
     {
         if (isGhost)
         {
-            Debug.Log("isGhost");
-            Debug.Log(isGhost);
-
             //myRigidbody.mass = 0.1f;
             ReducePlayerMana(ghostMana);
         }
@@ -175,6 +172,11 @@ public class PlayerMovement : MonoBehaviour
     void UpdateMana()
     {
         healthbar.SetMana(currentMana, maxMana);
+    }
+
+    public bool GetVisibility()
+    {
+        return !isGhost;
     }
 
 }

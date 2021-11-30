@@ -48,7 +48,8 @@ public class EnemyMovement : MonoBehaviour
     void Walk()
     {
         float distance = PlayerDistance();
-        if (distance < maxDistanceToFollow)
+        bool canSensePlayer = player.GetVisibility() && distance < maxDistanceToFollow;
+        if (canSensePlayer)
         {
             MoveForwardToPlayer();
         }
