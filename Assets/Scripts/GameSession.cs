@@ -12,6 +12,8 @@ public class GameSession : MonoBehaviour
     void Awake()
     {
         int numberOfGameSessions = FindObjectsOfType<GameSession>().Length;
+        //another way to do this is
+        //numberOfGameSessions = FindObjectsOfType(GetType()).Length;
 
         if (numberOfGameSessions > 1)
         {
@@ -73,6 +75,35 @@ public class GameSession : MonoBehaviour
             SceneManager.LoadScene(nextLevelIndex);
         }
 
+    }
+
+    public void LoadMainMenuScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadGameOverScene()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
+    public void LoadFirstLevelScene()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    //For later use
+    //Call this like:
+    //StartCourutine(WaitAndLoad("LoadGameOverScene", 3f)
+    IEnumerator WaitAndLoad(String sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
     }
 
 
