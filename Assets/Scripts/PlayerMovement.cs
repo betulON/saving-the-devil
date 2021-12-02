@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!isAlive) { return; }
         bool isTouchingGround = myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
-        if (value.isPressed)
+        if (value.isPressed && isTouchingGround)
         {
             myRigidbody.velocity += new Vector2(0f, jumpSpeed);
         }

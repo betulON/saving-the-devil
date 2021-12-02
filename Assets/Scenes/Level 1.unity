@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6769040}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lamps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,6 +242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_11
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!1001 &62056664
@@ -254,6 +258,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -342,7 +350,7 @@ Transform:
   - {fileID: 2125953284}
   - {fileID: 1913870962}
   - {fileID: 1207418264}
-  m_Father: {fileID: 1449583643}
+  m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &81017979
@@ -355,6 +363,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -465,6 +477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_24
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &91057073
@@ -525,6 +541,10 @@ PrefabInstance:
     - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
       propertyPath: m_Name
       value: Stone1_21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
@@ -587,6 +607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_18
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &123072397
@@ -644,6 +668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!1001 &129558734
@@ -664,6 +692,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -775,6 +807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
 --- !u!4 &149904906 stripped
@@ -837,6 +873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_8
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!1001 &155542988
@@ -893,6 +933,10 @@ PrefabInstance:
     - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
       propertyPath: m_Name
       value: BrokenDoor1_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
@@ -1016,6 +1060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tel_4
       objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -1126,6 +1174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_4
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!4 &188863984 stripped
@@ -1133,6 +1185,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 554196299039404959, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
   m_PrefabInstance: {fileID: 188863983}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &200020833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 200020834}
+  - component: {fileID: 200020835}
+  m_Layer: 7
+  m_Name: BackgroundConfinement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &200020834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200020833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1423533628}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &200020835
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200020833}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4, y: 9}
+      - {x: -50, y: 9}
+      - {x: -50, y: -13}
+      - {x: 0, y: -13}
+      - {x: 49, y: -13}
+      - {x: 49, y: 9}
 --- !u!4 &206350943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 385951330688034503, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
@@ -1261,7 +1375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 228728576}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1324,6 +1438,10 @@ PrefabInstance:
     - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_Name
       value: BrokenDoor2_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
@@ -1434,6 +1552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_14
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!1001 &258597542
@@ -1494,6 +1616,10 @@ PrefabInstance:
     - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
       propertyPath: m_Name
       value: Stone1_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
@@ -1608,6 +1734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_25
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &346823623
@@ -1672,6 +1802,10 @@ PrefabInstance:
     - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
       propertyPath: m_Name
       value: Stone2_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
@@ -1753,6 +1887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_2
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!4 &367257682 stripped
@@ -1770,6 +1908,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -1881,6 +2023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_9
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!1001 &412995240
@@ -1941,6 +2087,10 @@ PrefabInstance:
     - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
       propertyPath: m_Name
       value: BrokenDoor1_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
@@ -2003,6 +2153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_22
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &460187786
@@ -2064,6 +2218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor1_3
       objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
 --- !u!1001 &498903480
@@ -2120,6 +2278,10 @@ PrefabInstance:
     - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
       propertyPath: m_Name
       value: Door_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
@@ -2182,6 +2344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_20
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &504303805
@@ -2242,6 +2408,10 @@ PrefabInstance:
     - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
       propertyPath: m_Name
       value: Stone2_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
@@ -2304,6 +2474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_17
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &532902651 stripped
@@ -2321,6 +2495,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -2392,6 +2570,10 @@ PrefabInstance:
     - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_Name
       value: BrokenDoor2_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
@@ -2503,6 +2685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_5
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!4 &569582928 stripped
@@ -2520,6 +2706,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -2589,6 +2779,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -2695,6 +2889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_23
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &609471744 stripped
@@ -2760,6 +2958,10 @@ PrefabInstance:
     - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
       propertyPath: m_Name
       value: Stone1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
@@ -2898,6 +3100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor2_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -2976,6 +3182,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -3087,6 +3297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_5
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &768440589 stripped
@@ -3157,6 +3371,10 @@ PrefabInstance:
     - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
       propertyPath: m_Name
       value: Stone1_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
@@ -3238,6 +3456,10 @@ PrefabInstance:
     - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
       propertyPath: m_Name
       value: Stone1_16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
@@ -3410,6 +3632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_1
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!4 &875202598 stripped
@@ -3432,6 +3658,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_14
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -3562,6 +3792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!4 &979226499 stripped
@@ -3628,6 +3862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_10
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &1022492891
@@ -3685,6 +3923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!4 &1022492892 stripped
@@ -3710,6 +3952,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -3767,6 +4013,10 @@ PrefabInstance:
     - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_Name
       value: BrokenDoor2_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
@@ -3873,6 +4123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_5
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!1001 &1061929510
@@ -3933,6 +4187,10 @@ PrefabInstance:
     - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
       propertyPath: m_Name
       value: Stone1_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
@@ -4005,6 +4263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_19
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &1077688793
@@ -4062,6 +4324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_3
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!4 &1077688794 stripped
@@ -4079,6 +4345,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -4149,6 +4419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenLamp_12
       objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -4210,6 +4484,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -4325,6 +4603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_11
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &1142409650
@@ -4385,6 +4667,10 @@ PrefabInstance:
     - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
       propertyPath: m_Name
       value: Stone2_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
@@ -4451,6 +4737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_7
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!4 &1155959256 stripped
@@ -4476,6 +4766,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -4582,6 +4876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_6
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &1166728479 stripped
@@ -4607,6 +4905,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -4717,6 +5019,10 @@ PrefabInstance:
     - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
       propertyPath: m_Name
       value: Stone1_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
@@ -4977,6 +5283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor1_7
       objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
 --- !u!1 &1238802991
@@ -5026,7 +5336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1238802994
 AudioSource:
@@ -5284,6 +5594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_13
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!1001 &1282517221
@@ -5341,6 +5655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_8
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!1001 &1303425451
@@ -5353,6 +5671,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -5469,6 +5791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor1_2
       objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
 --- !u!4 &1334613817 stripped
@@ -5499,6 +5825,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -5556,7 +5886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347149179}
   - component: {fileID: 1347149178}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5687,6 +6017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_14
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &1352314520
@@ -5699,6 +6033,10 @@ PrefabInstance:
     - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_Name
       value: BrokenDoor2_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
@@ -5819,6 +6157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_4
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &1379508831 stripped
@@ -5886,6 +6228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_10
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!1001 &1402933654
@@ -5906,6 +6252,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -6017,6 +6367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!4 &1404657686 stripped
@@ -6083,6 +6437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_7
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &1414493466 stripped
@@ -6099,7 +6457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1423533628}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Backgrounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6120,6 +6478,7 @@ Transform:
   - {fileID: 1434071814}
   - {fileID: 1347149179}
   - {fileID: 1486102469}
+  - {fileID: 200020834}
   m_Father: {fileID: 1449583643}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6133,6 +6492,10 @@ PrefabInstance:
     - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_Name
       value: BrokenDoor2_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
@@ -6247,6 +6610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_4
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!4 &1429522715 stripped
@@ -6269,7 +6636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1434071814}
   - component: {fileID: 1434071813}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6352,6 +6719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor2_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -6411,7 +6782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1449583643}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: UnIteractables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6434,9 +6805,8 @@ Transform:
   - {fileID: 6769040}
   - {fileID: 228728576}
   - {fileID: 1423533628}
-  - {fileID: 64152165}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1459872893 stripped
 Transform:
@@ -6453,7 +6823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1486102469}
   - component: {fileID: 1486102468}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6543,6 +6913,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -6650,6 +7024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_2
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!4 &1513048468 stripped
@@ -6726,6 +7104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_13
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &1534081182
@@ -6746,6 +7128,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -6807,7 +7193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1535585151}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6903,6 +7289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_16
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!1001 &1569869793
@@ -6964,6 +7354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_12
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!1 &1593836124
@@ -6977,7 +7371,7 @@ GameObject:
   - component: {fileID: 1593836127}
   - component: {fileID: 1593836126}
   - component: {fileID: 1593836125}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: LeftWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7140,6 +7534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_6
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!1001 &1643345855
@@ -7204,6 +7602,10 @@ PrefabInstance:
     - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
       propertyPath: m_Name
       value: Stone2_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
@@ -7272,6 +7674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!4 &1666296659 stripped
@@ -7302,6 +7708,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -7359,6 +7769,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -7429,7 +7843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1724257351}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7511,6 +7925,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -7622,6 +8040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_15
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!1001 &1817239455
@@ -7634,6 +8056,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_15
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -7710,6 +8136,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -7920,6 +8350,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tel_10
       objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -8030,6 +8464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_7
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!1001 &1971699025
@@ -8087,6 +8525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_7
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!4 &1979224828 stripped
@@ -8112,6 +8554,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -8214,6 +8660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp_9
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!1 &2009788071
@@ -8314,6 +8764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &2023748104 stripped
@@ -8383,6 +8837,10 @@ PrefabInstance:
     - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
       propertyPath: m_Name
       value: Stone2_6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
@@ -8579,6 +9037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_15
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!4 &2043485261 stripped
@@ -8645,6 +9107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone2_10
       objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
 --- !u!4 &2064562536 stripped
@@ -8672,6 +9138,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel_12
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -8782,6 +9252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor1_6
       objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
 --- !u!4 &2103434353 stripped
@@ -8815,7 +9289,7 @@ GameObject:
   - component: {fileID: 2125953284}
   - component: {fileID: 2125953283}
   - component: {fileID: 2125953282}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: RightWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8923,6 +9397,10 @@ PrefabInstance:
     - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_Name
       value: BrokenDoor2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3778176904434056324, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5112047516603748496, guid: 5dc19975bb1934931889b3b4e2bd4849, type: 3}
       propertyPath: m_RootOrder
@@ -9038,6 +9516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone1
       objectReference: {fileID: 0}
+    - target: {fileID: 8317144708328832750, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af79c585906c4fa3b2403d10515d587, type: 3}
 --- !u!4 &660525157488684839 stripped
@@ -9100,6 +9582,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 4669929979833102465, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054fd6a9f59834570987757fbb381a02, type: 3}
 --- !u!4 &1280934787458126597 stripped
@@ -9145,6 +9631,10 @@ PrefabInstance:
     - target: {fileID: 2049586711553572641, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049586711553572641, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2049586711553572641, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9228,6 +9718,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+--- !u!1 &2049586711854794658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2049586710873196133, guid: c998e49fd05e6ea4eb8c070311fd15f8, type: 3}
+  m_PrefabInstance: {fileID: 2049586711854794657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2049586711854794659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049586711854794658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 200020835}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1001 &2930175052582792056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9286,6 +9798,10 @@ PrefabInstance:
     - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
       propertyPath: m_Name
       value: Stone2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085219803002322307, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24a7c45bf5514b98bfae53754b316ba, type: 3}
@@ -9406,6 +9922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenDoor1
       objectReference: {fileID: 0}
+    - target: {fileID: 2603045134338709988, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f69c861edfb4da3a32a96a68f15ee4, type: 3}
 --- !u!4 &3743693520251657986 stripped
@@ -9423,6 +9943,10 @@ PrefabInstance:
     - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_Name
       value: Tel
+      objectReference: {fileID: 0}
+    - target: {fileID: 144062124162499984, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1321302546290283957, guid: 507215d8128f6457e8e8c089eae61828, type: 3}
       propertyPath: m_SortingOrder
@@ -9534,6 +10058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 7632918391025736180, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b6f69daec824e0d8f18ee28c310496, type: 3}
 --- !u!4 &5906449093278809851 stripped
@@ -9551,6 +10079,10 @@ PrefabInstance:
     - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_Name
       value: BrokenLamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831231755534797823, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6656297331016156833, guid: a1a998570013e44d1bed55d7bbcc103e, type: 3}
       propertyPath: m_RootOrder
@@ -9610,13 +10142,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2187306203185169047, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475658181520650522, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3532151620989068038, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3933910507934177746, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4097536803507133421, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633632848984895304, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029135435986943145, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5507894295274832355, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626909945194200060, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5978005405663888894, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6110594115293865002, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7465652114013740597, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
       propertyPath: m_RootOrder
@@ -9665,6 +10233,14 @@ PrefabInstance:
     - target: {fileID: 7465652114013740599, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
       propertyPath: m_Name
       value: Ira (Player)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465652114013740599, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757085622338597345, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55943a96c9dfc2448becff41196b22fa, type: 3}
