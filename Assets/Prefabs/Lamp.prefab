@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2465204487830798390}
   - component: {fileID: 1461218700795380379}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lamp
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
