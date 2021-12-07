@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class AudioPlayer : MonoBehaviour
 {
@@ -31,9 +33,7 @@ public class AudioPlayer : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
     }
-
 
     public void PlayShootingClip()
     {

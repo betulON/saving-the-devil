@@ -9,6 +9,8 @@ public class GameSession : MonoBehaviour
     [SerializeField] int playerLives = 3;
     [SerializeField] float loadSceneDelay = 3f;
 
+    //AudioPlayer audioPlayer;
+
     void Awake()
     {
         int numberOfGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -24,6 +26,11 @@ public class GameSession : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    //void Start()
+    //{
+    //    audioPlayer = GetComponent<AudioPlayer>();
+    //}
 
     public void ProcessPlayerDeath()
     {
@@ -80,6 +87,7 @@ public class GameSession : MonoBehaviour
     public void LoadMainMenuScene()
     {
         SceneManager.LoadScene("MainMenu");
+        
     }
 
     public void LoadGameOverScene()
