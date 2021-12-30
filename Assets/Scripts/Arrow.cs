@@ -40,11 +40,18 @@ public class Arrow : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("in collision");
         if (collision.tag == "Enemy")
         {
             collision.GetComponent<Health>().ReduceHealth(arrowDamage);
-           // Destroy(collision.gameObject);
+            // Destroy(collision.gameObject);
         }
+        else if (collision.tag == "Stuck")
+        {
+            Debug.Log("stucked");
+            player.transform.position = collision.transform.position;
+        }
+
         Destroy(gameObject);
     }
 
