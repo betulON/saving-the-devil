@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     CapsuleCollider2D myCapsuleCollider;
     [SerializeField] float walkSpeed = 5f;
+    [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 30f;
     [SerializeField] float maxHealth = 100f;
     [SerializeField] float maxMana = 50f;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     float health;
 
     bool isGhost;
+    bool isRunning;
     float ghostInput;
     float currentMana;
 
@@ -103,6 +105,11 @@ public class PlayerMovement : MonoBehaviour
         isGhost = Mathf.Abs(value.Get<float>()) > Mathf.Epsilon && currentMana >= ghostMana;
     }
 
+    void OnRun(InputValue value)
+    { 
+        isRunning = Mathf.Abs(value.Get<float>()) > Mathf.Epsilon;
+    }
+
     void Ghost()
     {
         if (isGhost)
@@ -114,7 +121,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Walk()
     {
-        Vector2 playerVelocity = new Vector2(moveInput.x * walkSpeed, myRigidbody.velocity.y);
+        float speed = 0f;
+        if (isRunning)
+        {
+            speed = runSpeed;
+        } else
+        {
+            speed = walkSpeed;
+        }
+
+        Vector2 playerVelocity = new Vector2(moveInput.x * speed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
 
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
