@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGhost;
     bool isRunning;
+    bool isChained;
     float ghostInput;
     float currentMana;
 
@@ -84,19 +85,27 @@ public class PlayerMovement : MonoBehaviour
         if (!isAlive || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("PShooting") ) { return; }
         if (value.isPressed)
         {
-            //Mouse rotation
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()); 
-            Vector3 targetDirection = mousePos - transform.position;
-            targetDirection.Normalize();
-            float rotation_z = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
-            Quaternion rotationArrow = Quaternion.Euler(0f, 0f, rotation_z);
-            //Instantiate(arrow, bow.position, transform.rotation);
+            if (isChained)
+            {
+                transform.position = arrow.transform.position;
+            }
+            else
+            {
+                //Mouse rotation
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+                Vector3 targetDirection = mousePos - transform.position;
+                targetDirection.Normalize();
+                float rotation_z = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
+                Quaternion rotationArrow = Quaternion.Euler(0f, 0f, rotation_z);
+                //Instantiate(arrow, bow.position, transform.rotation);
 
-            transform.localScale = new Vector2(Mathf.Sign(targetDirection.x), 1f);
-            myAnimator.SetTrigger("Shooting");
-            Instantiate(arrow, bow.position, rotationArrow);
+                transform.localScale = new Vector2(Mathf.Sign(targetDirection.x), 1f);
+                myAnimator.SetTrigger("Shooting");
+                Instantiate(arrow, bow.position, rotationArrow);
 
-            audioPlayer.PlayShootingClip();
+                audioPlayer.PlayShootingClip();
+            }
+            
         }
     }
 
@@ -195,6 +204,11 @@ public class PlayerMovement : MonoBehaviour
     public bool GetVisibility()
     {
         return !isGhost;
+    }
+
+    public void setChain(bool chain)
+    {
+        isChained = chain;
     }
 
 }

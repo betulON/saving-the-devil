@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Arrow : MonoBehaviour
+public class ChainArrow : MonoBehaviour
 {
     Rigidbody2D myRigidbody;
     [SerializeField] float arrowSpeed = 15f;
@@ -11,6 +11,7 @@ public class Arrow : MonoBehaviour
     [SerializeField] float arrowLifeTime = 0.1f;
     PlayerMovement player;
     float xSpeed;
+    bool isStuck;
 
     Vector3 mousePos;
     Vector3 direction;
@@ -22,6 +23,8 @@ public class Arrow : MonoBehaviour
 
     void Start()
     {
+        isStuck = false;
+
         myRigidbody = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<PlayerMovement>();
         xSpeed = player.transform.localScale.x * arrowSpeed;
@@ -34,6 +37,8 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
+        //myRigidbody.velocity = new Vector2(xSpeed, 0f);
+        if (isStuck) { return; }
         transform.position += direction * arrowSpeed * Time.deltaTime;
     }
 
@@ -44,9 +49,17 @@ public class Arrow : MonoBehaviour
         {
             collision.GetComponent<Health>().ReduceHealth(arrowDamage);
             // Destroy(collision.gameObject);
-            
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        else if (collision.tag == "Stuck")
+        {
+            Debug.Log("stucked");
+            player.setChain(true);
+            isStuck = true;
+            //player.transform.position = collision.transform.position;
+        }
+
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -54,4 +67,8 @@ public class Arrow : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public bool getStuck()
+    {
+        return isStuck;
+    }
 }
