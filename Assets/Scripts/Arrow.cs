@@ -11,6 +11,8 @@ public class Arrow : MonoBehaviour
     [SerializeField] float arrowLifeTime = 0.1f;
     PlayerMovement player;
     float xSpeed;
+    bool isStuck;
+    Vector3 stuckPosition;
 
     Vector3 mousePos;
     Vector3 direction;
@@ -22,6 +24,8 @@ public class Arrow : MonoBehaviour
 
     void Start()
     {
+        isStuck = false;
+
         myRigidbody = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<PlayerMovement>();
         xSpeed = player.transform.localScale.x * arrowSpeed;
@@ -34,19 +38,29 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
+        if (isStuck) { return; }
         transform.position += direction * arrowSpeed * Time.deltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("in collision");
+        // Debug.Log("in collision");
         if (collision.tag == "Enemy")
         {
             collision.GetComponent<Health>().ReduceHealth(arrowDamage);
             // Destroy(collision.gameObject);
-            
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        else if (collision.tag == "Stuck")
+        {
+            isStuck = true;
+            stuckPosition = collision.transform.position;
+            // Debug.Log("arrow stuckPosition:");
+            // Debug.Log(stuckPosition);
+            player.SetChain(true, stuckPosition);
+        }
+
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)

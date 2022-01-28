@@ -146,4 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowSpeed: 15
   arrowDamage: 15
-  arrowLifeTime: 1
+  arrowLifeTime: 20

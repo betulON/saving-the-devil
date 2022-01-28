@@ -12,9 +12,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 30f;
+    [SerializeField] float slidingSpeed = 40f;
+    // [SerializeField] float climbSpeed = 1f;
     [SerializeField] float maxHealth = 100f;
     [SerializeField] float maxMana = 50f;
     [SerializeField] float ghostMana = 2f;
+    
 
     [SerializeField] GameObject arrow;
     [SerializeField] Transform bow;
@@ -29,39 +32,52 @@ public class PlayerMovement : MonoBehaviour
     bool isGhost;
     bool isRunning;
     bool isChained;
+    bool isHanging;
+    bool isSliding;
+    Vector3 chainArrowPos;
     float ghostInput;
     float currentMana;
+
 
     void Awake()
     {
         audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
-
     void Start()
     {
+        isChained = false;
+        isHanging = false;
+        isSliding = false;
+        isGhost = false;
+
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
-        isGhost = false;
         health = maxHealth;
         currentMana = maxMana;
         healthbar.SetHealth(health, maxHealth);
         healthbar.SetMana(currentMana, maxMana);
 
-
-        //    bowPlace = GetComponentInChildren<Transform>();
     }
 
     void Update()
     {
         if (!isAlive) { return; }
+        if (isHanging) { myRigidbody.gravityScale = 0; }
+        else { myRigidbody.gravityScale = 10; }
+        if (isSliding)
+        {
+            MoveToArrow();
+            return;
+        }
         Walk();
         FlipSprite();
         Die();
         UpdateHealth();
         Ghost();
         UpdateMana();
+        //Climb();
     }
 
     void OnMove(InputValue value)
@@ -71,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void OnJump(InputValue value)
     {
-        if (!isAlive) { return; }
+        if (!isAlive || isHanging || isChained) { return; }
         bool isTouchingGround = myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"));
         if (value.isPressed && isTouchingGround)
         {
@@ -79,25 +95,28 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+// Left mouse button to fire an arrow
+// If the player is chained pushing left mouse button begins sliding
+// If the player is sliding pushing left mouse button releases the player
     void OnFire(InputValue value)
     {
-        if (isGhost) { return; }
+        if (isGhost || isHanging) { return; }
         if (!isAlive || myAnimator.GetCurrentAnimatorStateInfo(0).IsName("PShooting") ) { return; }
         if (value.isPressed)
         {
-            if (isChained)
+            if (isChained && !isHanging)
             {
-                transform.position = arrow.transform.position;
+                isSliding = true;
             }
             else
             {
-                //Mouse rotation
+                // Shooting arrow
+                // Mouse rotation
                 Vector3 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
                 Vector3 targetDirection = mousePos - transform.position;
                 targetDirection.Normalize();
                 float rotation_z = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg;
                 Quaternion rotationArrow = Quaternion.Euler(0f, 0f, rotation_z);
-                //Instantiate(arrow, bow.position, transform.rotation);
 
                 transform.localScale = new Vector2(Mathf.Sign(targetDirection.x), 1f);
                 myAnimator.SetTrigger("Shooting");
@@ -106,6 +125,16 @@ public class PlayerMovement : MonoBehaviour
                 audioPlayer.PlayShootingClip();
             }
             
+        }
+    }
+
+    void OnRelease(InputValue value)
+    {
+        if (isHanging || isChained)
+        {
+            isHanging = false;
+            isChained = false;
+            isSliding = false;
         }
     }
 
@@ -123,7 +152,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGhost)
         {
-            //myRigidbody.mass = 0.1f;
             ReducePlayerMana(ghostMana);
         }
     }
@@ -146,6 +174,16 @@ public class PlayerMovement : MonoBehaviour
         myAnimator.SetBool("isWalking", playerHasHorizontalSpeed);
         
     }
+    // void Climb()
+    // {
+    //     if (!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) { return; }
+    //     Vector2 playerVelocity = new Vector2(myRigidbody.velocity.x, moveInput.y * climbSpeed);
+    //     myRigidbody.velocity = playerVelocity;
+
+    //     //bool playerHasVerticalSpeed = Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
+    //    // myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
+        
+    // }
 
     void FlipSprite()
     {
@@ -206,9 +244,39 @@ public class PlayerMovement : MonoBehaviour
         return !isGhost;
     }
 
-    public void setChain(bool chain)
+    public void SetChain(bool chain, Vector2 pos)
     {
         isChained = chain;
+        chainArrowPos = pos;
+    }
+
+    void ReleaseChain() 
+    {
+        isHanging = false;
+        isChained = false;
+    }
+
+    void MoveToArrow()
+    {
+        myRigidbody.gravityScale = 0;        
+
+        Vector3 targetPos = chainArrowPos;
+        targetPos.y = targetPos.y - 2f;
+
+        Vector3 direction = targetPos - transform.position;
+        float distance = Vector3.Distance(targetPos, transform.position);
+
+        if (distance < Mathf.Epsilon)
+        {
+            isSliding = false;
+            isHanging = true;
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, slidingSpeed * Time.fixedDeltaTime);
+        }
+        
+
     }
 
 }

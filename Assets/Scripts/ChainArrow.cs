@@ -54,7 +54,7 @@ public class ChainArrow : MonoBehaviour
         else if (collision.tag == "Stuck")
         {
             Debug.Log("stucked");
-            player.setChain(true);
+            //player.SetChain(true);
             isStuck = true;
             //player.transform.position = collision.transform.position;
         }
